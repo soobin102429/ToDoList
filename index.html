@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="list-box">
+        <h1>To Do List</h1>
+        <div class="write-box">
+            <input type="text" class="text-basic">
+            <button type="button" id="btnAdd">Add</button>
+        </div>
+        <!-- write-box end -->
+        <table class="list-table">
+            <colgroup>
+                <col width="10%">
+                <col width="90%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>To Do List</th>
+                </tr>
+            </thead>
+            <tbody id="listBody">
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-chk">
+                    </td>
+                    <td>
+                        Cleaning
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-chk">
+                    </td>
+                    <td>
+                        HW
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- table end -->
+        <div class="btn-area">
+            <button type="button" id="DeleteSel">Delete Selected Items</button>
+            <button type="button" id="btnDelLast">Delete Last Data Item</button>
+            <button type="button" id="btnDelAll">Delete All</button>
+        </div>
+        <!-- btn-area  -->
+    </div>
+    <!-- list-box -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
